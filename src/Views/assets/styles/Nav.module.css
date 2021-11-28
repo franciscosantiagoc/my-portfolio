@@ -23,13 +23,18 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    color: white;
 }
-
+.namePage{
+    display: flex;
+    align-items: center;
+}
 .imgLogo {
     width: 60px;
     background-color: white;
     border: solid 2px black;
     border-radius: 50%;
+    margin-right: 15px;
 }
 
 .options{
@@ -71,26 +76,37 @@
         width: 65%;
     }
 }
-@media (max-width:490px) {
+@media (max-width:550px) {
     .header{
-        height: 250px;
+        height: 15%;
+        /* height: 250px; */
     }
     .menuContainer{
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
+    }
+    .namePage{
+        justify-content: center;
     }
     .menu button{
         display: inline-block;
-        border: solid 2px black;
+        background-color: #fff;
         width: 30px;
         height: 30px;
         position: absolute;
         top: 10px;
-        right: 10px;      
+        right: 10px;
+        border-radius: 10%;
+    }
+    .menu button:hover{
+        background-color: rgb(39, 35, 243);
+        color: #fff;
+        border: solid 1px black;
     }
     .options{
         width: 90%;
         flex-direction: column;
+        display: none;
     }
     .options a{
        width: 100%;
