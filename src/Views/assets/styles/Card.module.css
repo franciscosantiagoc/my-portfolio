@@ -1,0 +1,92 @@
+.card{
+    width: 450px;
+    height: 350px;
+    background-color: rgb(12, 27, 226);
+    overflow: hidden;
+    border: solid 5px rgb(0, 0, 0);
+    border-radius: 25px;
+    margin-top: 30px;
+
+}
+.card:hover {
+    transform: scale(1.1);
+    border: solid 6px yellow;
+}
+.name{
+    margin-top: 10px;
+    text-align: center;
+    color:#fff;
+}
+.imageCont {
+    width: 100%;
+    background-color: lime;
+    height: 85%;
+}
+
+.imageCont img{
+    width: 100%;
+    height: 100%;
+}
+
+.desc{
+    background-color: rgba(0, 0, 0,.7);
+    position: relative;
+    /* top: -100%; */
+    left: 0px;
+    z-index: 80;
+    padding: 5%;
+    width: 90%;
+    height: 350px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll; 
+}
+.desc::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(121, 117, 117);
+}
+.desc::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.card:hover > .desc{
+    animation: deslizar .35s;
+    top:-100%;
+}
+.card:hover > .imageCont img{
+    transform: scale(1.3);
+}
+
+.desc p{
+    width: 100%;
+    text-align: center;
+}
+
+.card p{
+    margin-top: 20px;
+}
+
+.card a{
+    background-color: rgb(29, 33, 245);
+    color: #fff;
+    margin-top: 20px;
+    padding: 15px 35px;
+    border: solid 2px yellow;
+    border-radius: 10px;
+}
+
+.card a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+@keyframes deslizar {
+    0% { top:0% }
+    20% { top: -20% }
+    40% { top: -40% }
+    60% { top: -60% }
+    80% { top: -80% }
+    100% { top: -100% }
+  }
