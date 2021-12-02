@@ -31,7 +31,7 @@ export default function Skills({name,desc,image,link}) {
   ])
 
     return (
-      <section title="skills" className={style.container} >
+      <section name="skills" className={style.container} >
           <h2>Skills</h2>
           <div className={style.containerSkills}>
             <h3 className={style.titleSkill}>Tecnologías</h3>

@@ -4,21 +4,26 @@ import Main from './Views/Components/Home.jsx';
 import About from './Views/Components/AboutMe.jsx';
 import Skills from './Views/Components/Skills';
 import Projects from './Views/Components/Projects';
-import {Routes,Route} from 'react-router-dom';
+import Contact from './Views/Components/Contact';
+import Footer from './Views/Components/Footer';
+import {Switch,Route} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
       <Nav/>
-      {/* <Routes>
+       <Switch>
         
-        <Route exact path="/"> */}
-          
+        <Route exact path="/" > 
           <Main/>
           <About/>
           <Skills/>
           <Projects/>
-        {/* </Route>
-      </Routes> */}
+          <Contact/>
+          <Footer/>
+        </Route>
+
+        <Route path="/" /> 
+      </Switch> 
     </div>
   );
 }

@@ -8,7 +8,7 @@ import {faDownload} from '@fortawesome/free-solid-svg-icons';
 export default function AboutMe() {
 
     return (
-      <section title="About" className={style.container}>
+      <section name="about" className={style.container}>
           <div className={style.info}>
             <h3>¿Quien soy?</h3> 
             <p>Hola, yo soy Francisco Santiago de la Cruz. Desarrollador FullStack autodidacta, apasionado por la tecnología y con ganas de seguir aprendiendo.

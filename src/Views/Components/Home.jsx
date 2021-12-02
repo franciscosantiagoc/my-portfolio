@@ -7,7 +7,7 @@ import mycv from '../assets/files/pruebaCV.pdf';
 export default function Home() {
 
     return (
-      <main className={style.main}>
+      <main name="home" className={style.main}>
           <div className={style.container}>
             <div className={`${style.data}`}>
                 <p>¡Hola! mi nombre es</p>

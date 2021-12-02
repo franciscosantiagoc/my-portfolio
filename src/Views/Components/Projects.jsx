@@ -11,7 +11,7 @@ export default function Projects() {
             image:p1,
             date:'Noviembre 2021',
             desc:'App creada utilizando React, Redux, Node y Sequelize, durante la cursada del bootcamp SoyHenry',
-            check:'h|ttps://www.linkedin.com/feed/update/urn:li:activity:6869733959408902144/',
+            check:'https://www.linkedin.com/feed/update/urn:li:activity:6869733959408902144/',
             repo:'https://github.com/franciscosantiagoc/PI-Pokemon',        
         },
          {
@@ -19,7 +19,7 @@ export default function Projects() {
             name:'Sistema de TUTORIAS',
             image:p2,
             date:'Enero 2021 - Agosto 2021',
-            desc:'Proyecto creado con PHP, JavaScript,jQuery y Boostrap, utilizando el Patrón de diseño MVC',
+            desc:'Proyecto creado con PHP, JavaScript,jQuery y Boostrap, utilizando el Patrón de diseño MVC, creado durante el periodo de practica profesional de Residencia durante mis estudios universitarios',
             check:'',
             repo:'',        
         },
@@ -41,7 +41,7 @@ export default function Projects() {
         }, */
     ])
     return (
-      <section title="projects" className={style.container}>
+      <section name="projects" className={style.container}>
           <h2>Proyectos</h2>
           <div className={style.cards}>
             {projects.map((project,i)=><Card key={i} image={project.image} name={project.name} date={project.date} desc={project.desc} check={project.check} repo={project.repo} />)}
