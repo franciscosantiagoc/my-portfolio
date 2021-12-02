@@ -6,14 +6,14 @@ import Skills from './Views/Components/Skills';
 import Projects from './Views/Components/Projects';
 import Contact from './Views/Components/Contact';
 import Footer from './Views/Components/Footer';
+import Pag404 from './Views/Components/Pag404';
 import {Switch,Route} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Nav/>
        <Switch>
-        
         <Route exact path="/" > 
+          <Nav/>
           <Main/>
           <About/>
           <Skills/>
@@ -22,7 +22,7 @@ function App() {
           <Footer/>
         </Route>
 
-        <Route path="/" /> 
+        <Route path="/" component={Pag404} /> 
       </Switch> 
     </div>
   );

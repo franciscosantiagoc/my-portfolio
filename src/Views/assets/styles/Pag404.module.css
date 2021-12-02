@@ -1,0 +1,31 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container img{
+    background-color: rgb(219, 219, 28);
+    border-radius: 50%;
+}
+.btn{
+    width: 150px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: solid 3px yellow;
+}
+.btn:hover{
+    color:black;
+    background-color: yellow;
+    border: solid 3px black;
+    transform: scale(1.2);
+}
