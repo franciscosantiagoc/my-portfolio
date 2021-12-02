@@ -1,5 +1,4 @@
 import style from '../assets/styles/AboutMe.module.css';
-import style2 from '../assets/styles/Home.module.css';
 import aboutimg2 from '../assets/img/aboutme.gif';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

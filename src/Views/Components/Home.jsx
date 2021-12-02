@@ -1,9 +1,8 @@
 import style from '../assets/styles/Home.module.css';
-import {NavLink, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
 import miFoto from '../assets/img/miFoto.png';
-import mycv from '../assets/files/pruebaCV.pdf';
 export default function Home() {
 
     return (

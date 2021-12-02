@@ -13,8 +13,8 @@ export default function Card({name,image,date,desc,check,repo}) {
               <h3 className={style.name}>{name}</h3>
               <p>{desc}</p>
               <p>{`Realizado: ${date}`}</p>
-              {check?<a href={check} target="_blank"><FontAwesomeIcon icon={faPlayCircle}/> Ver video o demo</a>:<a target="_blank" onClick={()=>alert('Demo o video no cargados, por favor intentelo más tarde')}><FontAwesomeIcon icon={faPlayCircle} /> Ver video o demo</a>}
-              {repo?<a href={repo} target="_blank"><FontAwesomeIcon icon={faLaptopCode}/> Ver repositorio</a>:null}
+              {check?<a href={check} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faPlayCircle}/> Ver video o demo</a>:<a href="/" onClick={()=>alert('Demo o video no cargados, por favor intentelo más tarde')}><FontAwesomeIcon icon={faPlayCircle} /> Ver video o demo</a>}
+              {repo?<a href={repo} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLaptopCode}/> Ver repositorio</a>:null}
           </div>
       </div>
     );

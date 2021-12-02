@@ -21,7 +21,7 @@ export default function Skills({name,desc,image,link}) {
   ])
 
   let [softs] = useState([
-     {name:'Visual Studio Code',image:'https://cdn.icon-icons.com/icons2/3053/PNG/512/microsoft_visual_studio_code_alt_macos_bigsur_icon_189953.png',level:''},
+     {name:'Visual Studio Code',image:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/771px-Visual_Studio_Code_1.18_icon.svg.png',level:''},
      {name:'Adobe XD',image:'https://greenknow.co/wp-content/uploads/2020/12/ADOBE-XD.png',level:''},
      {name:'Photoshop',image:'https://cdn.worldvectorlogo.com/logos/photoshop-cc-4.svg',level:''},
      {name:'Netbeans',image:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Apache_NetBeans_Logo.svg/1776px-Apache_NetBeans_Logo.svg.png',level:''},
