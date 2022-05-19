@@ -12,7 +12,7 @@ export default function Home() {
                 <p>¡Hola! mi nombre es</p>
                 <h1>Francisco Santiago de la Cruz</h1>
                 <h3>FullStack Developer</h3>
-                <Link to="../assets/files/Francisco_Santiago_CV.pdf" className={style.btnDownloadCV} target="_blank" download><FontAwesomeIcon icon={faDownload}/>Descargar CV</Link>
+                <a href="https://drive.google.com/file/d/14VTc2uL8remwMcGYUTZaE9Pg9qU4gPA3/view?usp=sharing" className={style.btnDownloadCV} target="_blank" download><FontAwesomeIcon icon={faDownload}/>Descargar CV</a>
             </div>
             <div className={`${style.data}`}>
                 <img src={miFoto} alt="Foto Francisco" />

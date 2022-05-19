@@ -16,7 +16,7 @@ export default function AboutMe() {
                 Me considero una persona autodidácta, organizada y constante, a la que le gusta resolver problemas sin temor a enfrentarme a nuevos desafios.
             </p>
 
-            <Link to="../assets/files/Francisco_Santiago_CV.pdf" className={style.btnDownloadCV} target="_blank" download><FontAwesomeIcon icon={faDownload}/>Descargar CV</Link>
+            <a href="https://drive.google.com/file/d/14VTc2uL8remwMcGYUTZaE9Pg9qU4gPA3/view?usp=sharing" className={style.btnDownloadCV} target="_blank" download><FontAwesomeIcon icon={faDownload}/>Descargar CV</a>
           </div>
           <div className={style.imgContainer}>
               <img src={aboutimg2} alt="Foto de personalidad" />

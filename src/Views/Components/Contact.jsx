@@ -15,23 +15,17 @@ export default function Contact() {
             </a>
           </div>         
           <div className={style.opcontac}>
-            <a className={style.linkop} rel="noreferrer" href="https://www.linkedin.com/in/franciscosantiagoc" target="_blank" >
+            <a className={style.linkop} rel="npm" href="https://www.linkedin.com/in/franciscosantiagoc" target="_blank" >
               <p>LinkedIn</p>
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </div>         
           <div className={style.opcontac}>
-            <a href="tel:5219711379445" rel="noreferrer" className={style.linkop}>
+            <a href="tel:+529711379445" rel="noreferrer" className={style.linkop}>
               <p>Teléfono</p>
               <FontAwesomeIcon icon={faPhone} />
             </a>
-          </div>         
-          {/* <div className={style.opcontac}>
-            <a className={style.linkop}>
-              <p></p>
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </div>         */} 
+          </div>
         </div>
       </section>
     );

@@ -12,14 +12,15 @@
 
 .contentoptions{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-shrink: 1;
 }
 
 .opcontac{
     background-color: rgb(29, 33, 245);
-    width: 150px;height: 150px;
+    width: 130px;
+    height: 130px;
     margin-top: 100px;
     display: flex;
     align-items: center;
