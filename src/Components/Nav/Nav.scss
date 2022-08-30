@@ -1,147 +1,54 @@
-.header{
-    background-color: rgba(0, 0, 0, .8);
+@import '../../scss/index.scss';
+.header {
+    background-color: $background-blue;
     height: 15vh;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
-    border-bottom: solid 1px white;
+    /* border-bottom: solid 1px white; */
     z-index: 100;
-}
 
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 10%;
-}
-.menu button{
-    display: none;
-}
-
-.menuContainer{
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    color: white;
-}
-.namePage{
-    display: flex;
-    align-items: center;
-    width: 25%;
-}
-.imgLogo {
-    width: 60px;
-
-    background-color: white;
-    border: solid 2px black;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.options{
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    width: 75%;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-.options a{
-    text-decoration: none;
-    font-size: 15px;
-    text-align: center;
-    color: #fff;
-    width: 20%;
-    min-width: 100px;
-    height: 40px;    
-}
-.options a:hover{
-    background-color: rgb(0, 0, 0);
-    width: 18%;
-    border: solid 2px yellow
-}
-
-.active{
-    background-color:gray;
-    color:black;
-}
-
-.options a li{
-    height: 100%;
-    line-height: 30px;
-    padding: 0 15px;
-}
-@media (max-width:1020px) {
-    .namePage{
-        width: 400px;
-    }
-    .menu{
-        padding: 0 20px;
-    }
-    .options{
-        width: 100%;
-        justify-content: start;
-    }
-
-    
-}
-@media (min-width:831px) {
-    .options{
-        width: 90%;
+    .menu {
         display: flex;
-    }
-}
-@media (max-width:830px) {
-    .header{
-        height: 15%;
-    }
-    .menu{
-        padding: 0 5px;
-    }
-    .menuContainer{
-        flex-direction: column;
-        flex-wrap: wrap;
-        flex-shrink: 1;
-        width: 100%;
+        justify-content: space-between;
         align-items: center;
-    }
-    .namePage{
-        justify-content: center;
-    }
-    .menu button{
-        display: inline-block;
-        background-color: #fff;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        border-radius: 10%;
-    }
-    .menu button:hover{
-        background-color: rgb(39, 35, 243);
-        color: #fff;
-        border: solid 1px black;
-    }
-    .options{
-        width: 90%;
-        flex-direction: column;
-        display: none;
-    }
-    .options a{
-       width: 100%;
-       border-bottom: solid .2px rgba(0, 0, 0, .75)
+        width: 100%;
+        padding: 0 10%;
     }
 
-    .options a:hover{
-        background-color:gray;
-        color:black;
-        border: solid 2px yellow
+    .namePage {
+        display: flex;
+        align-items: center;
+        width: 25%;
+    }
+
+    .imgLogo {
+        height: 14vh;
+    }
+
+    .options {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        width: 500px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        a {
+            color: $font-light;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: $font-dark;
+            background-color: $font-light;
+            padding: 10px;
+        }
+
+        .active {
+            color: $font-dark;
+            background-color: $font-light;
+            padding: 10px;
+        }
     }
 }

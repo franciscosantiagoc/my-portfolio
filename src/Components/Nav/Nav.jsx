@@ -1,90 +1,90 @@
-import style from "../assets/styles/Nav.module.css";
-//import {NavLink} from 'react-router-dom'
+import "./Nav.scss";
+import logo from "./../../assets/img/logo.png";
+
 import { animateScroll as scroll, Link } from "react-scroll";
-import logo from "../assets/img/code.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouseChimney,
+  faAddressCard,
+  faUsersGear,
+  faFolderPlus,
+  faAddressBook,
+} from "@fortawesome/free-solid-svg-icons";
 export default function Nav() {
-  function displayMenu() {
-    let headermenu = document.querySelector(".Nav_header__Nt8r9");
-    let menu = document.querySelector(".Nav_options__nxKUs");
-    let dismen = menu.style.display;
-    if (dismen === "" || dismen === "none") {
-      menu.style.display = "flex";
-      headermenu.style.height = "250px";
-    } else {
-      menu.style.display = "none";
-      headermenu.style.height = "15%";
-    }
-  }
 
   const scrollTop = () => {
     scroll.scrollToTop();
   };
+
   return (
-    <header className={style.header}>
-      <nav className={style.menu}>
-        <div className={style.menuContainer}>
-          <div className={style.namePage} onClick={scrollTop}>
-            <img className={style.imgLogo} src={logo} alt="Logo" />
-            <h2>Mi Portafolio</h2>
-          </div>
-          <ul className={style.options}>
-            <Link
-              activeClass={style.active}
-              to="home"
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-100}
-            >
-              <li>Inicio</li>
-            </Link>
-            <Link
-              activeClass={style.active}
-              to="about"
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-100}
-            >
-              <li>Información</li>
-            </Link>
-            <Link
-              activeClass={style.active}
-              to="skills"
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-100}
-            >
-              <li>Skills</li>
-            </Link>
-            <Link
-              activeClass={style.active}
-              to="projects"
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-100}
-            >
-              <li>Proyectos</li>
-            </Link>
-            <Link
-              activeClass={style.active}
-              to="contact"
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-80}
-            >
-              <li>Contacto</li>
-            </Link>
-          </ul>
+    <header className="header">
+      <nav className="menu">
+        <div className="namePage" onClick={scrollTop}>
+          <img className="imgLogo" src={logo} alt="Logo Portafolio Francisco" />
         </div>
-        <button onClick={displayMenu}>
-          <FontAwesomeIcon icon={faBars} />
-        </button>
+        <ul className="options">
+          <Link
+            activeClass="active"
+            to="home"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-100}
+          >
+            <li>
+              <FontAwesomeIcon icon={faHouseChimney} /> Inicio
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="about"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-100}
+          >
+            <li>
+              <FontAwesomeIcon icon={faAddressCard} /> Información
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="skills"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-100}
+          >
+            <li>
+              <FontAwesomeIcon icon={faUsersGear} /> Skills
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-100}
+          >
+            <li>
+              <FontAwesomeIcon icon={faFolderPlus} /> Proyectos
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-80}
+          >
+            <li>
+              <FontAwesomeIcon icon={faAddressBook} /> Contacto
+            </li>
+          </Link>
+        </ul>
       </nav>
     </header>
   );

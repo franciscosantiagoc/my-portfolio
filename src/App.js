@@ -1,6 +1,6 @@
 
-/* import Nav from './Components/Nav.jsx.js';
-import Main from './Components/Home.jsx.js';
+import Nav from './Components/Nav/Nav.jsx';
+/*import Main from './Components/Home.jsx.js';
 import About from './Components/AboutMe.jsx.js';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
@@ -15,9 +15,8 @@ function App() {
         <Route exact path="/" 
           element={
           <>
-            <h1>Prueba</h1>
-            {/* <Nav/>
-            <Main/>
+            <Nav/>
+            {/* <Main/>
             <About/>
             <Skills/>
             <Projects/>
