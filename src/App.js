@@ -1,13 +1,13 @@
 
-import Nav from './Views/Components/Nav.jsx';
-import Main from './Views/Components/Home.jsx';
-import About from './Views/Components/AboutMe.jsx';
-import Skills from './Views/Components/Skills';
-import Projects from './Views/Components/Projects';
-import Contact from './Views/Components/Contact';
-import Footer from './Views/Components/Footer';
-import Pag404 from './Views/Components/Pag404';
-import {Routes,Route} from 'react-router-dom';
+/* import Nav from './Components/Nav.jsx.js';
+import Main from './Components/Home.jsx.js';
+import About from './Components/AboutMe.jsx.js';
+import Skills from './Components/Skills';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import Pag404 from './Components/Pag404'; */
+import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
@@ -15,17 +15,18 @@ function App() {
         <Route exact path="/" 
           element={
           <>
-            <Nav/>
+            <h1>Prueba</h1>
+            {/* <Nav/>
             <Main/>
             <About/>
             <Skills/>
             <Projects/>
             <Contact/>
-            <Footer/>
+            <Footer/> */}
           </>
           } />
 
-        <Route path="/" component={Pag404} /> 
+        {/* <Route path="/" component={Pag404} />  */}
       </Routes> 
     </div>
   );

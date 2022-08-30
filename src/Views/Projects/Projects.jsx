@@ -1,6 +1,6 @@
 import style from '../assets/styles/Projects.module.css';
 import { useState } from 'react';
-import Card from './Card.jsx';
+import Card from '../../Components/Card/Card.jsx';
 import project1 from '../assets/img/Projects/img_project01.jpg'
 import project2 from '../assets/img/Projects/img_project02.jpg'
 import project3 from '../assets/img/Projects/img_project03.jpg'
