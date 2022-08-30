@@ -1,5 +1,5 @@
 import style from '../assets/styles/Projects.module.css';
-import {useState} from 'react';
+import { useState } from 'react';
 import Card from './Card.jsx';
 import project1 from '../assets/img/Projects/img_project01.jpg'
 import project2 from '../assets/img/Projects/img_project02.jpg'
@@ -28,7 +28,7 @@ export default function Projects() {
             date:'Enero 2021 - Agosto 2021',
             desc:'Proyecto creado con PHP, JavaScript,jQuery y Boostrap, utilizando el Patrón de diseño MVC, creado durante el periodo de practica profesional de Residencia durante mis estudios universitarios',
             check:'',
-            repo:'',        
+            repo:'https://github.com/franciscosantiagoc/sittutorias.git',        
         },
         /*{
             name:'',

@@ -3,11 +3,11 @@ import style from '../assets/styles/Nav.module.css';
 import { animateScroll as scroll, Link } from 'react-scroll';
 import logo from '../assets/img/code.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 export default function Nav() {
   function displayMenu() {
-    let headermenu=document.querySelector('.Nav_header__2iF_j');
-    let menu=document.querySelector('.Nav_options__1CWfh');
+    let headermenu=document.querySelector('.Nav_header__Nt8r9');
+    let menu=document.querySelector('.Nav_options__nxKUs');
     let dismen=menu.style.display;
     if(dismen==="" || dismen==="none"){
       menu.style.display="flex";
