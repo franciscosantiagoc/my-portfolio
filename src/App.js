@@ -1,7 +1,7 @@
 
 import Nav from './Components/Nav/Nav.jsx';
-/*import Main from './Components/Home.jsx.js';
-import About from './Components/AboutMe.jsx.js';
+import Home from './Views/Home/Home.jsx';
+/*import About from './Components/AboutMe';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
@@ -16,8 +16,8 @@ function App() {
           element={
           <>
             <Nav/>
-            {/* <Main/>
-            <About/>
+             <Home/>
+            {/*<About/>
             <Skills/>
             <Projects/>
             <Contact/>
